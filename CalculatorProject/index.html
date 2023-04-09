@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="calculator">
+		<div class="display">
+			<input type="text" id="result" disabled>
+		</div>
+		<div class="keys">
+			<button class="btn btn-primary" onclick="clearResult()">C</button>
+			<button class="btn btn-primary" onclick="deleteDigit()">CE</button>
+			<button class="btn btn-primary" onclick="addToResult('%')">%</button>
+			<button class="btn btn-warning" onclick="addToResult('/')">/</button>
+			<button class="btn btn-primary" onclick="addToResult('7')">7</button>
+			<button class="btn btn-primary" onclick="addToResult('8')">8</button>
+			<button class="btn btn-primary" onclick="addToResult('9')">9</button>
+			<button class="btn btn-warning" onclick="addToResult('*')">*</button>
+			<button class="btn btn-primary" onclick="addToResult('4')">4</button>
+			<button class="btn btn-primary" onclick="addToResult('5')">5</button>
+			<button class="btn btn-primary" onclick="addToResult('6')">6</button>
+			<button class="btn btn-warning" onclick="addToResult('-')">-</button>
+			<button class="btn btn-primary" onclick="addToResult('1')">1</button>
+			<button class="btn btn-primary" onclick="addToResult('2')">2</button>
+			<button class="btn btn-primary" onclick="addToResult('3')">3</button>
+			<button class="btn btn-warning" onclick="addToResult('+')">+</button>
+			<button class="btn btn-primary" onclick="addToResult('0')">0</button>
+			<button class="btn btn-primary" onclick="addToResult('.')">.</button>
+			<button class="btn btn-success" onclick="calculateResult()">=</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
